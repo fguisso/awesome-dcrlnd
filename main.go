@@ -40,7 +40,7 @@ func main() {
 	)
 
 	// Dial to the dcrlnd.
-	conn, err := grpc.Dial("localhost:8080", opts...)
+	conn, err := grpc.Dial("localhost:10009", opts...)
 	if err != nil {
 		log.Printf("Unable to dial to dcrlnd's gRPC server: %v", err)
 		return
